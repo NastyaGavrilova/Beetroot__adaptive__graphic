@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/solodkui/teamplate#readme",
   "dependencies": {
-    "bootstrap": "^5.1.1"
+    "bootstrap": "^5.1.1",
+    "mocha": "^9.1.2"
   }
 }

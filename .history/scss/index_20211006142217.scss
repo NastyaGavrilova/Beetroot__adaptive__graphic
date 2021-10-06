@@ -1,0 +1,24 @@
+// ! Normalize
+@import "./plugins/normalize";
+// ! Fonts
+@import "./fonts";
+// ! Media
+@import "./media";
+// Config
+@import "./variables";
+// Mixins
+@import "./mixins";
+//Main style
+@import "./main";
+// Plugins
+@import "./plugins/index";
+// All style
+@import "./elements/index";
+@import "./components/index";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}

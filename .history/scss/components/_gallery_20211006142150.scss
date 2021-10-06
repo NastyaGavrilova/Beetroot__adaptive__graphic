@@ -1,0 +1,123 @@
+.c-gallery {
+  background-color: $c-yellow;
+  padding: 100px 0 120px;
+  color: $c-grey-dark;
+
+  &__description {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 350px;
+    display: flex;
+  }
+
+  .c-description__title {
+    font-size: em(90);
+    font-weight: bold;
+    line-height: 120px;
+  }
+
+  .c-description__text {
+    font-size: em(17);
+    font-weight: 300;
+    margin: 0 0 28px;
+  }
+
+  .c-gallery__photos {
+    background-color: $c-yellow;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+  }
+
+  .c-photos__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    .c-photos__item {
+      padding-bottom: 10px;
+    }
+    .c-photos__item:last-child {
+      padding-bottom: 0;
+    }
+  }
+  .c-photos__wrapper--bottom {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .e-list__item--persimmon {
+    padding-left: 12px;
+  }
+
+  .c-gallery__button {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__description {
+      text-align: center;
+      padding: 0 150px;
+    }
+
+    .c-description__title {
+      font-size: em(40);
+      font-weight: bold;
+      line-height: 50px;
+    }
+
+    &__photos {
+      display: flex;
+      flex-direction: column;
+    }
+    .c-photos__item {
+      width: 100%;
+      overflow: hidden;
+      max-width: 378px;
+    }
+    .c-photos__item:nth-child(4n) {
+      margin-bottom: 5px;
+    }
+    .e-list__item--persimmon {
+      padding-left: 0;
+    }
+
+    .c-photos__wrapper {
+      padding-left: 0;
+      .c-photos__item {
+        width: 100%;
+        overflow: hidden;
+        max-width: 378px;
+        padding-bottom: 0;
+        height: auto;
+      }
+    }
+
+    .c-photos__wrapper--bottom {
+      display: flex;
+      flex-direction: column;
+      padding-top: 0;
+      .c-photos__item {
+        width: 100%;
+        overflow: hidden;
+        max-width: 378px;
+        padding-bottom: 0;
+        height: auto;
+      }
+    }
+
+    img {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+
+  @media screen and (max-width: 812px) {
+    &__description {
+      text-align: center;
+      padding: 0 50px;
+    }
+  }
+}
